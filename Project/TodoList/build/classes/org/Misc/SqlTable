@@ -1,0 +1,28 @@
+// User Register Table
+
+CREATE TABLE register (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    first_name VARCHAR(255) NOT NULL,
+    last_name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    city VARCHAR(255) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+CREATE TABLE todolist (
+
+	id INT PRIMARY KEY AUTO_INCREMENT,
+	user_id VARCHAR(20) NOT NULL, 
+	todo_topic VARCHAR(255) NOT NULL,
+	todo_desc VARCHAR(255) NOT NULL,
+	todo_date VARCHAR(50) NOT NULL,
+	todo_status VARCHAR(20) NOT NULL,
+	timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+
+
+
